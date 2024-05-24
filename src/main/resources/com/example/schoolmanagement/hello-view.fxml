@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.Login">
+   <children>
+      <Label layoutX="40.0" layoutY="91.0" text="Admin Id" textAlignment="CENTER">
+         <font>
+            <Font name="Bookman Old Style Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="200.0" text="Password" textAlignment="CENTER">
+         <font>
+            <Font name="Bookman Old Style Bold" size="20.0" />
+         </font></Label>
+      <PasswordField fx:id="Password" layoutX="46.0" layoutY="231.0" prefHeight="38.0" prefWidth="287.0" />
+      <TextField fx:id="Id" layoutX="40.0" layoutY="121.0" prefHeight="38.0" prefWidth="287.0" />
+      <Button layoutX="77.0" layoutY="377.0" mnemonicParsing="false" onAction="#idPassCheck" prefHeight="38.0" prefWidth="258.0" text="Log In" />
+      <Button layoutX="180.0" layoutY="327.0" mnemonicParsing="false" text="Button" />
+      <ImageView fitHeight="469.0" fitWidth="372.0" layoutX="386.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@aesthetic-dark-wallpaper-background-neon-light.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="136.0" layoutY="14.0" prefHeight="28.0" prefWidth="237.0" text="Welcome Back" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Black" size="24.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="46.0" layoutY="302.0" mnemonicParsing="false" text="Remember me " />
+      <ImageView fitHeight="469.0" fitWidth="401.0" layoutX="-585.0" layoutY="-47.0" pickOnBounds="true">
+         <image>
+            <Image url="@BGimage.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="messageShown" layoutX="225.0" layoutY="169.0" prefWidth="97.0" />
+   </children>
+
+<!--   <image>&ndash;&gt;-->
+<!--   &lt;!&ndash;         <Image url="@my_image.png" />&ndash;&gt;-->
+<!--   &lt;!&ndash;      </image>/>&ndash;&gt;-->
+</AnchorPane>
