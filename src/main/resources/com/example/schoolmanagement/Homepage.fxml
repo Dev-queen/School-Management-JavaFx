@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="404.0" prefWidth="653.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.HomePage">
+<AnchorPane prefHeight="404.0" prefWidth="653.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.HomePage">
    <children>
       <ImageView fx:id="studentsImageView" fitHeight="119.0" fitWidth="119.0" layoutX="45.0" layoutY="68.0" onMouseClicked="#goToRegistration" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@students.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
       <Label layoutX="28.0" layoutY="194.0" text="Student Registration">
          <font>
             <Font name="Berlin Sans FB" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="237.0" layoutY="194.0" text="Subjects">
+      <Label layoutX="237.0" layoutY="196.0" text="Subjects">
          <font>
             <Font name="Berlin Sans FB" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="80.0" layoutY="352.0" text="Exams">
+      <Label layoutX="64.0" layoutY="353.0" text="Exams">
          <font>
             <Font name="Berlin Sans FB" size="18.0" />
          </font>
@@ -41,16 +45,25 @@
       <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="211.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Subjects.png" />
-         </image></ImageView>
-      <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="49.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="41.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@examTime.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
       <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="208.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Teachers.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
       <Label layoutX="38.0" layoutY="27.0" text="Welcome to Admin Panel" underline="true">
          <font>

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
-<?import javafx.collections.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to left bottom, #64c2fa, #6bd0f7, #7eddf2, #98e8ed, #b4f2eb);;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.Registration">
    <children>
-      <Label layoutX="29.0" layoutY="74.0" text="Student Name">
+      <Label layoutX="34.0" layoutY="83.0" text="Student Name">
          <font>
             <Font name="Bell MT Bold" size="20.0" />
          </font></Label>
-      <TextArea layoutX="348.0" layoutY="40.0" prefHeight="338.0" prefWidth="234.0" />
+      <TextArea editable="false" layoutX="348.0" layoutY="40.0" prefHeight="338.0" prefWidth="234.0" />
       <Separator layoutX="328.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="7.0" />
       <Button layoutX="216.0" layoutY="333.0" mnemonicParsing="false" text="Save ✅">
          <font>
@@ -29,46 +30,51 @@
             <Font name="Bell MT Bold" size="16.0" />
          </font>
       </Button>
-      <Label layoutX="32.0" layoutY="162.0" text="Date Of Birth">
+      <Label layoutX="201.0" layoutY="159.0" text="Gender">
          <font>
             <Font name="Bell MT Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="205.0" layoutY="161.0" text="Gender">
+      <Label layoutX="33.0" layoutY="157.0" text="Grade">
          <font>
             <Font name="Bell MT Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="28.0" layoutY="237.0" text="Address">
+      <Label layoutX="31.0" layoutY="233.0" text="Email ">
          <font>
             <Font name="Bell MT Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="187.0" layoutY="238.0" text="Phone">
-         <font>
-            <Font name="Bell MT Bold" size="20.0" />
-         </font>
-      </Label>
-      <TextField layoutX="28.0" layoutY="109.0" prefHeight="26.0" prefWidth="125.0" />
-      <TextField layoutX="28.0" layoutY="269.0" prefHeight="26.0" prefWidth="126.0" />
-      <TextField layoutX="183.0" layoutY="269.0" prefHeight="26.0" prefWidth="122.0" />
-      <ChoiceBox fx:id="genderChoiceBox" layoutX="200.0" layoutY="194.0" prefHeight="26.0" prefWidth="83.0">
-         <FXCollections fx:factory="observableArrayList">
+      <TextField layoutX="33.0" layoutY="118.0" prefHeight="26.0" prefWidth="125.0" />
+      <TextField layoutX="31.0" layoutY="189.0" prefHeight="26.0" prefWidth="103.0" />
+      <TextField layoutX="30.0" layoutY="265.0" prefHeight="26.0" prefWidth="252.0" />
+      <ChoiceBox fx:id="genderChoiceBox" layoutX="200.0" layoutY="188.0" prefHeight="26.0" prefWidth="83.0">
+
             <String fx:value="Male" />
             <String fx:value="Female" />
-         </FXCollections>
+
       </ChoiceBox>
-      <DatePicker layoutX="31.0" layoutY="195.0" prefHeight="26.0" prefWidth="126.0" />
-      <Label layoutX="180.0" layoutY="74.0" text="Last Name">
+      <Label layoutX="185.0" layoutY="83.0" text="Last Name">
          <font>
             <Font name="Bell MT Bold" size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="180.0" layoutY="109.0" prefHeight="26.0" prefWidth="126.0" />
-      <Label layoutX="28.0" layoutY="14.0" text="Registration">
+      <TextField layoutX="185.0" layoutY="118.0" prefHeight="26.0" prefWidth="126.0" />
+      <Label layoutX="107.0" layoutY="24.0" text="Registration" underline="true">
          <font>
-            <Font name="Bodoni MT Black" size="30.0" />
+            <Font name="Britannic Bold" size="30.0" />
          </font>
       </Label>
+
+      <ImageView fx:id="arrow" fitHeight="44.0" fitWidth="48.0" layoutX="18.0" layoutY="17.0" onMouseClicked="#goToHome" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@left-arrow_5629228.png" />
+      </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+
+
    </children>
 </AnchorPane>
