@@ -12,7 +12,7 @@ import javafx.scene.image.ImageView;
 // CANT FOCUS ANYMORE HELP
 public class HomePage {
 
-    @FXML
+//    @FXML
 //     ImageView studentsImageView;
 //    // Get the reference to the ImageView
 //    AnchorPane root = FXMLLoader.load();
