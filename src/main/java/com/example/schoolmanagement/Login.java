@@ -1,6 +1,5 @@
 package com.example.schoolmanagement;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.event.ActionEvent;

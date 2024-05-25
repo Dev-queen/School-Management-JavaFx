@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to left bottom, #64c2fa, #6bd0f7, #7eddf2, #98e8ed, #b4f2eb);;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.Registration">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to left bottom, #64c2fa, #6bd0f7, #7eddf2, #98e8ed, #b4f2eb);;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.Registration">
    <children>
       <Label layoutX="34.0" layoutY="83.0" text="Student Name">
          <font>
