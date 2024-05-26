@@ -11,6 +11,9 @@ public class HomePage {
 
     @FXML
      ImageView studentsImageView;
+    @FXML
+
+    ImageView SubjectsImageView;
 
     public void goToRegistration(MouseEvent e) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Registration.fxml"));
@@ -19,5 +22,38 @@ public class HomePage {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void goToSubjects(MouseEvent e) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Subjects.fxml"));
+        Stage stage = (Stage) SubjectsImageView.getScene().getWindow();
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void goToExams(MouseEvent e) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Exam-Results.fxml"));
+        Stage stage = (Stage) SubjectsImageView.getScene().getWindow();
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void goToTeachers(MouseEvent e) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Teachers.fxml"));
+        Stage stage = (Stage) SubjectsImageView.getScene().getWindow();
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void goToLogin(MouseEvent e) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("LoginPage.fxml"));
+        Stage stage = (Stage) SubjectsImageView.getScene().getWindow();
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+    }
+
 
 }

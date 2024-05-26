@@ -7,7 +7,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="404.0" prefWidth="653.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.HomePage">
+<AnchorPane prefHeight="427.0" prefWidth="688.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.HomePage">
    <children>
       <ImageView fx:id="studentsImageView" fitHeight="119.0" fitWidth="119.0" layoutX="45.0" layoutY="68.0" onMouseClicked="#goToRegistration" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -37,19 +37,19 @@
             <Font name="Berlin Sans FB" size="18.0" />
          </font>
       </Label>
-      <ImageView fitHeight="404.0" fitWidth="303.0" layoutX="356.0" pickOnBounds="true">
+      <ImageView fitHeight="427.0" fitWidth="335.0" layoutX="356.0" pickOnBounds="true">
          <image>
             <Image url="@aesthetic-dark-wallpaper-background-neon-light.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="211.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="SubjectsImageView" fitHeight="112.0" fitWidth="112.0" layoutX="211.0" layoutY="71.0" onMouseClicked="#goToSubjects" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Subjects.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></ImageView>
-      <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="41.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="41.0" layoutY="240.0" onMouseClicked="#goToExams" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@examTime.png" />
          </image>
@@ -57,7 +57,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="208.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="208.0" layoutY="240.0" onMouseClicked="#goToTeachers" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Teachers.png" />
          </image>
@@ -86,5 +86,26 @@
             </LinearGradient>
          </textFill>
       </Label>
+      <Button layoutX="122.0" layoutY="377.0" mnemonicParsing="false" onMouseClicked="#goToLogin" prefHeight="36.0" prefWidth="84.0" text="Logout">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.821052610874176" green="0.4135672450065613" blue="0.5969356894493103" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4848862886428833" green="0.2641715407371521" blue="0.9263157844543457" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
    </children>
 </AnchorPane>

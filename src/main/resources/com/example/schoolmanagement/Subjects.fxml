@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
@@ -7,77 +8,85 @@
 
 <AnchorPane prefHeight="538.0" prefWidth="905.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.Subjects">
    <children>
-      <Label layoutX="154.0" layoutY="33.0" text="Math">
+      <Label layoutX="163.0" layoutY="53.0" text="Math">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="432.0" layoutY="33.0" text="English">
+      <Label layoutX="431.0" layoutY="48.0" text="English">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="155.0" layoutY="282.0" text="Science">
+      <Label layoutX="160.0" layoutY="297.0" text="Science">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="438.0" layoutY="282.0" text="Arabic">
+      <Label layoutX="437.0" layoutY="297.0" text="Arabic">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="703.0" layoutY="282.0" text="Islamic">
+      <Label layoutX="709.0" layoutY="297.0" text="Islamic">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="671.0" layoutY="33.0" text="Social Studies">
+      <Label layoutX="677.0" layoutY="48.0" text="Social Studies">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <TextArea editable="false" layoutX="79.0" layoutY="332.0" prefHeight="160.0" prefWidth="210.0" />
-      <TextArea editable="false" layoutX="619.0" layoutY="83.0" prefHeight="160.0" prefWidth="210.0" />
-      <TextArea editable="false" layoutX="354.0" layoutY="332.0" prefHeight="160.0" prefWidth="210.0" />
-      <TextArea editable="false" layoutX="619.0" layoutY="332.0" prefHeight="160.0" prefWidth="210.0" />
-      <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="79.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+      <TextArea editable="false" layoutX="79.0" layoutY="350.0" prefHeight="160.0" prefWidth="210.0" />
+      <TextArea editable="false" layoutX="625.0" layoutY="98.0" prefHeight="160.0" prefWidth="210.0" />
+      <TextArea editable="false" layoutX="353.0" layoutY="347.0" prefHeight="160.0" prefWidth="210.0" />
+      <TextArea editable="false" layoutX="625.0" layoutY="347.0" prefHeight="160.0" prefWidth="210.0" />
+      <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="88.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
       <image>
          <Image url="@Math.png" />
       </image>
 
    </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="67.0" layoutX="79.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="59.0" fitWidth="67.0" layoutX="88.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Science.png" />
          </image>
 
       </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="360.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="359.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@English.png" />
          </image>
 
       </ImageView>
-      <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="367.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="366.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Arabic.png" />
          </image>
 
       </ImageView>
-      <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="606.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="625.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@History.png" />
          </image>
 
       </ImageView>
-      <ImageView fitHeight="66.0" fitWidth="66.0" layoutX="629.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="66.0" fitWidth="66.0" layoutX="635.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Islamic.png" />
          </image>
 
       </ImageView>
-      <TextArea editable="false" layoutX="354.0" layoutY="83.0" prefHeight="160.0" prefWidth="210.0" />
-      <TextArea editable="false" layoutX="79.0" layoutY="83.0" prefHeight="160.0" prefWidth="210.0" />
+      <TextArea editable="false" layoutX="353.0" layoutY="98.0" prefHeight="160.0" prefWidth="210.0" />
+      <TextArea editable="false" layoutX="79.0" layoutY="101.0" prefHeight="160.0" prefWidth="210.0" />
+      <ImageView fx:id="arrow" fitHeight="44.0" fitWidth="48.0" layoutX="23.0" layoutY="18.0" onMouseClicked="#goToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@left-arrow_5629228.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
    </children>
 </AnchorPane>

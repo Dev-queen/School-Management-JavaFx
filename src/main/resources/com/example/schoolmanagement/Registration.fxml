@@ -13,7 +13,6 @@
          <font>
             <Font name="Bell MT Bold" size="20.0" />
          </font></Label>
-      <TextArea editable="false" layoutX="348.0" layoutY="40.0" prefHeight="338.0" prefWidth="234.0" />
       <Separator layoutX="328.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="7.0" />
       <Button layoutX="216.0" layoutY="333.0" mnemonicParsing="false" text="Save ✅">
          <font>
@@ -74,6 +73,12 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
+      <TableView layoutX="347.0" layoutY="15.0" prefHeight="375.0" prefWidth="244.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
 
 
    </children>
