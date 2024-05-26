@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="737.0" style="-fx-background-color: linear-gradient(to left bottom, #64c2fa, #6bd0f7, #7eddf2, #98e8ed, #b4f2eb);;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.StudentController">
+   <children>
+      <Label layoutX="34.0" layoutY="83.0" text="Student Name">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font></Label>
+      <Separator layoutX="328.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="7.0" />
+      <Button layoutX="216.0" layoutY="334.0" mnemonicParsing="false" onAction="#saveNewStudent" text="Save ✅">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="35.0" layoutY="335.0" mnemonicParsing="false" onAction="#deleteStudent" text="Delete ❌">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="141.0" layoutY="335.0" mnemonicParsing="false" onAction="#clearTextFields" text="Clear">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="186.0" layoutY="159.0" text="Gender">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="157.0" text="Grade">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="233.0" text="Email ">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="stdFN" layoutX="33.0" layoutY="118.0" prefHeight="26.0" prefWidth="125.0" />
+      <TextField fx:id="stdGrade" layoutX="34.0" layoutY="189.0" prefHeight="26.0" prefWidth="103.0" />
+      <TextField fx:id="stdEmail" layoutX="35.0" layoutY="265.0" prefHeight="26.0" prefWidth="252.0" />
+      <ChoiceBox fx:id="genderChoiceBox" layoutX="187.0" layoutY="188.0" prefHeight="26.0" prefWidth="83.0">
+
+            <String fx:value="Male" />
+            <String fx:value="Female" />
+
+      </ChoiceBox>
+      <Label layoutX="185.0" layoutY="83.0" text="Last Name">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="stdLN" layoutX="185.0" layoutY="118.0" prefHeight="26.0" prefWidth="126.0" />
+      <Label layoutX="107.0" layoutY="21.0" text="Registration" underline="true">
+         <font>
+            <Font name="Britannic Bold" size="30.0" />
+         </font>
+      </Label>
+
+      <ImageView fx:id="arrow" fitHeight="44.0" fitWidth="48.0" layoutX="18.0" layoutY="17.0" onMouseClicked="#goToHome" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@left-arrow_5629228.png" />
+      </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TableView fx:id="studentsTable" layoutX="342.0" layoutY="17.0" prefHeight="368.0" prefWidth="380.0">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="45.199951171875" text="Id" />
+          <TableColumn fx:id="columnName" prefWidth="72.5999755859375" text="Name" />
+            <TableColumn fx:id="columnEmail" prefWidth="90.80001831054688" text="Email" />
+            <TableColumn fx:id="columnGrade" prefWidth="76.5999755859375" text="Grade" />
+            <TableColumn fx:id="columnGender" prefWidth="92.20001220703125" text="Gender" />
+        </columns>
+      </TableView>
+
+
+   </children>
+</AnchorPane>

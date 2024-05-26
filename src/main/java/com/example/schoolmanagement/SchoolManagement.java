@@ -6,12 +6,12 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class LoginPage extends Application {
+public class SchoolManagement extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(LoginPage.class.getResource("LoginPage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SchoolManagement.class.getResource("LoginPage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Login Page");
+        stage.setTitle("LoginController Page");
         stage.setScene(scene);
         stage.show();
     }

@@ -7,7 +7,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="404.0" prefWidth="653.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.HomePage">
+<AnchorPane prefHeight="404.0" prefWidth="653.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.HomePageController">
    <children>
       <ImageView fx:id="studentsImageView" fitHeight="119.0" fitWidth="119.0" layoutX="45.0" layoutY="68.0" onMouseClicked="#goToRegistration" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -42,7 +42,7 @@
             <Image url="@aesthetic-dark-wallpaper-background-neon-light.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="211.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="subjectsImageView" fitHeight="112.0" fitWidth="112.0" layoutX="211.0" layoutY="71.0" onMouseClicked="#goToSubjects" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Subjects.png" />
          </image>
