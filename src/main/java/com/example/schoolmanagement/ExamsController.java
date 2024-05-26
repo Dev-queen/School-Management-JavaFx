@@ -9,10 +9,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Teachers {
+public class ExamsController {
     @FXML
     ImageView arrow ;
-
 
     public void goToHome(MouseEvent e) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("HomePage.fxml"));

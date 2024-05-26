@@ -7,7 +7,7 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 
-public class HomePage {
+public class HomePageController {
 
     @FXML
      ImageView studentsImageView;
@@ -16,7 +16,7 @@ public class HomePage {
     ImageView SubjectsImageView;
 
     public void goToRegistration(MouseEvent e) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Registration.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Students.fxml"));
         Stage stage = (Stage) studentsImageView.getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);

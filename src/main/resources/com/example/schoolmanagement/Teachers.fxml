@@ -1,30 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right bottom, #f894e8, #bdb9ff, #89d5ff, #8ae7ff, #b4f2eb);;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.Registration">
+<AnchorPane prefHeight="400.0" prefWidth="921.0" style="-fx-background-color: linear-gradient(to right bottom, #f894e8, #bdb9ff, #89d5ff, #8ae7ff, #b4f2eb);;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.TeachersController">
     <children>
         <Label layoutX="32.0" layoutY="74.0" text=" Name">
             <font>
                 <Font name="Bell MT Bold" size="20.0" />
             </font></Label>
         <Separator layoutX="328.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="7.0" />
-        <Button layoutX="216.0" layoutY="341.0" mnemonicParsing="false" text="Save ✅">
+        <Button layoutX="216.0" layoutY="341.0" mnemonicParsing="false" onAction="#saveNewTeacher" text="Save ✅">
             <font>
                 <Font name="Bell MT Bold" size="18.0" />
             </font>
         </Button>
-        <Button layoutX="35.0" layoutY="343.0" mnemonicParsing="false" text="Delete ❌">
+        <Button layoutX="35.0" layoutY="343.0" mnemonicParsing="false" onAction="#deleteTeacher" text="Delete ❌">
             <font>
                 <Font name="Bell MT Bold" size="16.0" />
             </font>
         </Button>
-        <Button layoutX="143.0" layoutY="343.0" mnemonicParsing="false" text="Clear">
+        <Button layoutX="143.0" layoutY="343.0" mnemonicParsing="false" onAction="#clearTextFields" text="Clear">
             <font>
                 <Font name="Bell MT Bold" size="16.0" />
             </font>
@@ -44,9 +51,9 @@
                 <Font name="Bell MT Bold" size="20.0" />
             </font>
         </Label>
-        <TextField layoutX="34.0" layoutY="109.0" prefHeight="26.0" prefWidth="125.0" />
-        <TextField layoutX="37.0" layoutY="173.0" prefHeight="26.0" prefWidth="126.0" />
-        <TextField layoutX="190.0" layoutY="173.0" prefHeight="26.0" prefWidth="126.0" />
+        <TextField fx:id="tchFN" layoutX="34.0" layoutY="109.0" prefHeight="26.0" prefWidth="125.0" />
+        <TextField fx:id="tchSalary" layoutX="37.0" layoutY="173.0" prefHeight="26.0" prefWidth="126.0" />
+        <TextField fx:id="tchCrsId" layoutX="190.0" layoutY="173.0" prefHeight="26.0" prefWidth="126.0" />
         <ChoiceBox fx:id="genderChoiceBox" layoutX="37.0" layoutY="239.0" prefHeight="0.0" prefWidth="83.0">
 
             <String fx:value="Male" />
@@ -58,7 +65,7 @@
                 <Font name="Bell MT Bold" size="20.0" />
             </font>
         </Label>
-        <TextField layoutX="186.0" layoutY="109.0" prefHeight="26.0" prefWidth="126.0" />
+        <TextField fx:id="tchLN" layoutX="186.0" layoutY="109.0" prefHeight="26.0" prefWidth="126.0" />
         <Label layoutX="107.0" layoutY="24.0" text="Registration" underline="true">
             <font>
                 <Font name="Britannic Bold" size="30.0" />
@@ -73,10 +80,15 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </ImageView>
-        <TableView layoutX="347.0" layoutY="15.0" prefHeight="375.0" prefWidth="244.0">
+        <TableView fx:id="teachersTable" layoutX="347.0" layoutY="15.0" prefHeight="375.0" prefWidth="555.0">
             <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
+                <TableColumn fx:id="columnId" prefWidth="52.7999267578125" text="Id" />
+                <TableColumn fx:id="columnName" prefWidth="77.5999755859375" text="name" />
+            <TableColumn fx:id="columnEmail" prefWidth="96.80001831054688" text="email" />
+            <TableColumn fx:id="columnGender" prefWidth="75.0" text="gender" />
+            <TableColumn fx:id="columnSalary" prefWidth="82.40008544921875" text="salary" />
+            <TableColumn fx:id="columnCrsId" prefWidth="90.39990234375" text="courseId" />
+            <TableColumn fx:id="columnCrsName" prefWidth="75.0" text="courseName" />
             </columns>
         </TableView>
       <Label layoutX="35.0" layoutY="272.0" text="Email ">
@@ -84,7 +96,7 @@
             <Font name="Bell MT Bold" size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="34.0" layoutY="304.0" prefHeight="26.0" prefWidth="252.0" />
+      <TextField fx:id="tchEmail" layoutX="34.0" layoutY="304.0" prefHeight="26.0" prefWidth="252.0" />
 
 
     </children>

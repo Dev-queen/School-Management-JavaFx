@@ -1,6 +1,6 @@
 package com.example.schoolmanagement;
 
-public class Person {
+public class Person implements SchoolIntity {
     private int id;
     private final String name;
     private String email;
