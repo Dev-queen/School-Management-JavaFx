@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="449.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.ExamsController">
+<AnchorPane prefHeight="449.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.ExamsController">
    <children>
       <ImageView fitHeight="78.0" fitWidth="79.0" layoutX="20.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="33.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
@@ -53,40 +53,40 @@
             <Cursor fx:constant="HAND" />
          </cursor>
    </ImageView>
-      <TableView layoutX="125.0" layoutY="64.0" prefHeight="99.0" prefWidth="164.0">
+      <TableView fx:id="engTable" layoutX="125.0" layoutY="64.0" prefHeight="99.0" prefWidth="151.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="colEngName" prefWidth="75.0" text="name" />
+          <TableColumn fx:id="colEngMarks" prefWidth="75.0" text="marks" />
         </columns>
       </TableView>
-      <TableView layoutX="125.0" layoutY="193.0" prefHeight="99.0" prefWidth="164.0">
+      <TableView fx:id="sciTable" layoutX="125.0" layoutY="193.0" prefHeight="99.0" prefWidth="151.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="C1" />
-            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn fx:id="colSciName" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="colSciMarks" prefWidth="75.0" text="marks" />
          </columns>
       </TableView>
-      <TableView layoutX="125.0" layoutY="324.0" prefHeight="99.0" prefWidth="164.0">
+      <TableView fx:id="mathTable" layoutX="125.0" layoutY="324.0" prefHeight="99.0" prefWidth="151.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="C1" />
-            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn fx:id="colMathName" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="colMathMarks" prefWidth="75.0" text="marks" />
          </columns>
       </TableView>
-      <TableView layoutX="403.0" layoutY="64.0" prefHeight="99.0" prefWidth="164.0">
+      <TableView fx:id="arabTable" layoutX="403.0" layoutY="64.0" prefHeight="99.0" prefWidth="151.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="C1" />
-            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn fx:id="colArabName" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="colArabMarks" prefWidth="75.0" text="marks" />
          </columns>
       </TableView>
-      <TableView layoutX="403.0" layoutY="190.0" prefHeight="99.0" prefWidth="164.0">
+      <TableView fx:id="SSTable" layoutX="403.0" layoutY="190.0" prefHeight="99.0" prefWidth="151.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="C1" />
-            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn fx:id="colSSName" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="colSSMarks" prefWidth="75.0" text="marks" />
          </columns>
       </TableView>
-      <TableView layoutX="403.0" layoutY="324.0" prefHeight="99.0" prefWidth="164.0">
+      <TableView fx:id="islamTable" layoutX="403.0" layoutY="324.0" prefHeight="99.0" prefWidth="151.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="C1" />
-            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn fx:id="colIslamName" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="colIslamMarks" prefWidth="75.0" text="marks" />
          </columns>
       </TableView>
 

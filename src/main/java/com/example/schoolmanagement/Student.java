@@ -6,7 +6,6 @@ public class Student extends Person{
     private int grade;
     private ArrayList<Course> courses;
 
-
     public Student(String name, String email, int grade, String gender) {
         super(name, email, gender);
         this.grade = grade;
@@ -27,9 +26,5 @@ public class Student extends Person{
 
     public ArrayList<Course> getCourses() {
         return courses;
-    }
-
-    public void setCourses(ArrayList<Course> courses) {
-        this.courses = courses;
     }
 }
