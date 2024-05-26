@@ -5,42 +5,42 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="538.0" prefWidth="905.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.SubjectsController">
+<AnchorPane prefHeight="538.0" prefWidth="905.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.Subjects">
    <children>
-      <Label fx:id="mathLabel" layoutX="154.0" layoutY="33.0" text="Math">
+      <Label layoutX="154.0" layoutY="33.0" text="Math">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="englishLabel" layoutX="432.0" layoutY="33.0" text="English">
+      <Label layoutX="432.0" layoutY="33.0" text="English">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="sciLabel" layoutX="155.0" layoutY="282.0" text="Science">
+      <Label layoutX="155.0" layoutY="282.0" text="Science">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="arabLabel" layoutX="438.0" layoutY="282.0" text="Arabic">
+      <Label layoutX="438.0" layoutY="282.0" text="Arabic">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="islamicLabel" layoutX="703.0" layoutY="282.0" text="Islamic">
+      <Label layoutX="703.0" layoutY="282.0" text="Islamic">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="SSLabel" layoutX="671.0" layoutY="33.0" text="Social Studies">
+      <Label layoutX="671.0" layoutY="33.0" text="Social Studies">
          <font>
             <Font name="Bodoni MT Bold" size="27.0" />
          </font>
       </Label>
-      <TextArea fx:id="sciTextArea" editable="false" layoutX="79.0" layoutY="332.0" prefHeight="160.0" prefWidth="210.0" />
-      <TextArea fx:id="SSTextArea" editable="false" layoutX="619.0" layoutY="83.0" prefHeight="160.0" prefWidth="210.0" />
-      <TextArea fx:id="arabTextArea" editable="false" layoutX="354.0" layoutY="332.0" prefHeight="160.0" prefWidth="210.0" />
-      <TextArea fx:id="islamicTextArea" editable="false" layoutX="619.0" layoutY="332.0" prefHeight="160.0" prefWidth="210.0" />
+      <TextArea editable="false" layoutX="79.0" layoutY="332.0" prefHeight="160.0" prefWidth="210.0" />
+      <TextArea editable="false" layoutX="619.0" layoutY="83.0" prefHeight="160.0" prefWidth="210.0" />
+      <TextArea editable="false" layoutX="354.0" layoutY="332.0" prefHeight="160.0" prefWidth="210.0" />
+      <TextArea editable="false" layoutX="619.0" layoutY="332.0" prefHeight="160.0" prefWidth="210.0" />
       <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="79.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
       <image>
          <Image url="@Math.png" />
@@ -77,7 +77,7 @@
          </image>
 
       </ImageView>
-      <TextArea fx:id="englishTextArea" editable="false" layoutX="354.0" layoutY="83.0" prefHeight="160.0" prefWidth="210.0" />
-      <TextArea fx:id="mathTextArea" editable="false" layoutX="79.0" layoutY="83.0" prefHeight="160.0" prefWidth="210.0" />
+      <TextArea editable="false" layoutX="354.0" layoutY="83.0" prefHeight="160.0" prefWidth="210.0" />
+      <TextArea editable="false" layoutX="79.0" layoutY="83.0" prefHeight="160.0" prefWidth="210.0" />
    </children>
 </AnchorPane>
